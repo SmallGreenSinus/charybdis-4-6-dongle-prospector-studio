@@ -10,7 +10,7 @@
 #define SCROLL 5
 #define FSCROLL 6
 #define SNIPING 7
-#define CARET 8
+#define CARETMV 8
 
 / {
   split_inputs {
@@ -29,7 +29,7 @@
     device = <&trackball_split>;
 
     caret {
-        layers = <CARET>;
+        layers = <CARETMV>;
         input-processors = <
             &zip_keybind_keys
             &zip_scroll_snap
@@ -40,7 +40,7 @@
     // хак, чтобы на курсор не перемещался на слое CARE
     // https://github.com/zmkfirmware/zmk/issues/2967#issuecomment-2982313146
     caret-prevent-move {
-        layers = <CARET>;
+        layers = <CARETMV>;
         input-processors = <&zip_xy_scaler 0 1>;
     };
 
