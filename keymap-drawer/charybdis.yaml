@@ -257,8 +257,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alg LESS_THAN'
+  - '&alg GREATER_THAN'
   - KP DOT
   - KP 4
   - KP 5
@@ -269,8 +269,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
   - KP 0
   - KP 1
   - KP 2
