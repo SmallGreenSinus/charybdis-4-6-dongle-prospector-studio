@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: carrefinho
       url-base: https://github.com/carrefinho
+    - name: zettaface
+      url-base: https://github.com/zettaface
 
   projects:
     - name: zmk
@@ -20,6 +22,10 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: 67425b7
+      
+    - name: zmk-input-processor-keybind
+      remote: zettaface
+      revision: main
 
   self:
     path: config
