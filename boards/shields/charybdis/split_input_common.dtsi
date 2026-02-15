@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
+#include <input/processors/zmk-input-processor-keybind.dtsi>
 
 // Layer definitions
 #define BASE 0
@@ -32,17 +33,17 @@
         layers = <CARETMV>;
         input-processors = <
             &zip_keybind_keys
-            &zip_scroll_snap
+            //&zip_scroll_snap
         >;
         process-next;
     };
 
-    // хак, чтобы на курсор не перемещался на слое CARE
-    // https://github.com/zmkfirmware/zmk/issues/2967#issuecomment-2982313146
-    caret-prevent-move {
-        layers = <CARETMV>;
-        input-processors = <&zip_xy_scaler 0 1>;
-    };
+    //// хак, чтобы на курсор не перемещался на слое CARE
+    //// https://github.com/zmkfirmware/zmk/issues/2967#issuecomment-2982313146
+    //caret-prevent-move {
+    //    layers = <CARETMV>;
+    //    input-processors = <&zip_xy_scaler 0 1>;
+    //};
 
     snipe {
       layers = <SNIPING>;
@@ -65,17 +66,17 @@
     };
   };
 
-&zip_scroll_snap {
-    x-threshold = <1 1>;
-    y-threshold = <1 1>;
-    xy-threshold = <1 1>;
-
-    require-n-samples = <10>;
-    immediate-snap-threshold = <1500>;
-    lock-duration-ms = <200>;
-    lock-for-next-n-events = <10>;
-    idle-reset-timeout-ms = <200>;
-};
+//&zip_scroll_snap {
+//    x-threshold = <1 1>;
+//    y-threshold = <1 1>;
+//    xy-threshold = <1 1>;
+//
+//    require-n-samples = <10>;
+//    immediate-snap-threshold = <1500>;
+//    lock-duration-ms = <200>;
+//    lock-for-next-n-events = <10>;
+//    idle-reset-timeout-ms = <200>;
+//};
 
 / {
     zip_keybind_keys: zip_keybind_keys {
