@@ -33,9 +33,15 @@
         layers = <CARETMV>;
         input-processors = <
             &zip_keybind_keys
-            //&zip_scroll_snap
         >;
         process-next;
+    };
+
+    // хак, чтобы на курсор не перемещался на слое CARE
+    // https://github.com/zmkfirmware/zmk/issues/2967#issuecomment-2982313146
+    caret-prevent-move {
+        layers = <CARETMV>;
+        input-processors = <&zip_xy_scaler 0 1>;
     };
 
     snipe {
