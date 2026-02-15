@@ -26,7 +26,6 @@ manifest:
     - name: zmk-input-processor-keybind
       remote: zettaface
       revision: main
-      path: modules/zmk/input-processor-keybind
 
   self:
     path: config
