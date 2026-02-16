@@ -247,7 +247,7 @@ layers:
   - '&alg CARET'
   - '&alg LEFT_BRACKET'
   - '&alg RIGHT_BRACKET'
-  - {t: ▽, type: trans}
+  - /
   - KP 7
   - KP 8
   - KP 9
