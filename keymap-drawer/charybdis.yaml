@@ -196,18 +196,18 @@ layers:
   - '&alg O'
   - '&alg P'
   - '&alg LBKT'
-  - RCTRL
+  - {t: ▽, type: trans}
   - {t: '&alg A', h: LGUI}
   - {t: '&alg S', h: LALT}
   - {t: '&alg D', h: LCTRL}
   - {t: '&alg F', h: LSHIFT}
-  - G
-  - H
+  - '&alg G'
+  - '&alg H'
   - {t: '&alg J', h: RSHIFT}
   - {t: '&alg K', h: RCTRL}
   - {t: '&alg L', h: RALT}
   - {t: '&alg SEMI', h: RGUI}
-  - ''''
+  - '&alg SQT'
   - {t: ▽, type: trans}
   - '&alg Z'
   - '&alg X'
