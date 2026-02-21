@@ -95,16 +95,16 @@ layers:
   - '-'
   - '='
   - LSFT
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
+  - {t: Ctl+ Z, h: LGUI}
+  - {t: Ctl+ X, h: LALT}
+  - {t: Ctl+ C, h: LCTRL}
+  - {t: Ctl+ V, h: LSHIFT}
   - Scroll
   - Ctl+Sft+ TAB
-  - LEFT
-  - DOWN
-  - RIGHT
-  - \
+  - {t: LEFT, h: RSHIFT}
+  - {t: DOWN, h: RCTRL}
+  - {t: RIGHT, h: RALT}
+  - {t: \, h: RGUI}
   - '`'
   - {type: held}
   - {t: ▽, type: trans}
