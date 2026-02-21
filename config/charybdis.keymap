@@ -104,12 +104,14 @@
       compatible = "zmk,behavior-macro-one-param";
       #binding-cells = <1>;
       bindings
-        = <&macro_press &kp LCTRL &kp LSHIFT>
-		, <&macro_release &kp LCTRL &kp LSHIFT>
+        //= <&macro_press &kp LCTRL &kp LSHIFT>
+		//, <&macro_release &kp LCTRL &kp LSHIFT>
+		= <&macro_tap &kp LS(LCTRL)>
         , <&macro_param_1to1>
         , <&macro_tap &kp MACRO_PLACEHOLDER>
-		, <&macro_press &kp LCTRL &kp LSHIFT>
-		, <&macro_release &kp LCTRL &kp LSHIFT>
+		, <&macro_tap &kp LS(LCTRL)>
+		//, <&macro_release &kp LCTRL &kp LSHIFT>
+		//, <&macro_press &kp LCTRL &kp LSHIFT>
         ;
     };
     
@@ -216,7 +218,7 @@
 	
     language_layer {
       label = "LANGUAGE";
-      display-name = "Language";
+      display-name = "Lang";
       bindings = <
 // ╭─────────────┬────────────────┬────────────────┬────────────────┬──────────────────┬─────────────╮   ╭─────────────┬───────────────────┬──────────────────┬────────────────┬──────────────────┬─────────────╮
     &trans        &alg N1          &alg N2          &alg N3          &alg N4            &alg N5           &alg N6       &alg N7             &alg N8            &alg N9          &alg N0            &trans
