@@ -6,7 +6,7 @@
 #define BASE 0
 #define POINTER 1
 #define CARETMV 2
-#define RAISE 3
+#define LANGUAGE 3
 #define SYMBOLS 4
 #define SCROLL 5
 #define FSCROLL 6
@@ -65,6 +65,20 @@
       hold-trigger-on-release;
       bindings =
         <&kp>,
+        <&kp>;
+    };
+
+    lg_hml: language_home_row_mod_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <280>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <150>;
+      hold-trigger-key-positions = <KEYS_R THUMBS>;
+      hold-trigger-on-release;
+      bindings =
+        <&alg>,
         <&kp>;
     };
 
@@ -143,7 +157,7 @@
     &kp LSFT      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M               &kp COMMA        &kp DOT       &kp FSLH        &kp RBKT
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴───────────────────┴────────────────┴─────────────┴───────────────┴─────────────╯
 //               ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬───────────────────┬────────────────╮
-                  &mo POINTER   &kp LGUI      &mo CARETMV   &kp LCTRL     &kp LALT          &blt RAISE BSPC   &blt SYMBOLS SPACE       &kp RET
+                  &mo POINTER   &kp LGUI      &mo CARETMV   &kp LCTRL     &kp LALT          &blt LANGUAGE BSPC   &blt SYMBOLS SPACE       &kp RET
 //               ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴───────────────────┴────────────────╯
       >;
     };
@@ -186,9 +200,9 @@
       >;
     };
 	
-    raise_layer {
-      label = "RAISE";
-      display-name = "Raise";
+    language_layer {
+      label = "LANGUAGE";
+      display-name = "Language";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans

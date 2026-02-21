@@ -417,8 +417,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">BSPC</text>
-<a href="#Raise">
-<text x="0" y="24" class="key hold layer-activator">Raise</text>
+<a href="#Language">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 88%">Language</tspan></text>
 </a></g>
 <g transform="translate(590, 278) rotate(-20.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1042,8 +1042,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1379)" class="layer-Raise">
-<text x="0" y="28" class="label" id="Raise">Raise:</text>
+<g transform="translate(30, 1379)" class="layer-Language">
+<text x="0" y="28" class="label" id="Language">Language:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
