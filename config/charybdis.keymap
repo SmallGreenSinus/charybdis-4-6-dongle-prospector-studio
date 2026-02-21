@@ -102,16 +102,14 @@
     // Switching to another language with Ctrl + Shift, typing a key, and switching back
     alg: another_language  {
       compatible = "zmk,behavior-macro-one-param";
+      wait-ms = <10>;
+      tap-ms = <10>;
       #binding-cells = <1>;
       bindings
-        //= <&macro_press &kp LCTRL &kp LSHIFT>
-		//, <&macro_release &kp LCTRL &kp LSHIFT>
 		= <&macro_tap &kp LS(LCTRL)>
         , <&macro_param_1to1>
         , <&macro_tap &kp MACRO_PLACEHOLDER>
 		, <&macro_tap &kp LS(LCTRL)>
-		//, <&macro_release &kp LCTRL &kp LSHIFT>
-		//, <&macro_press &kp LCTRL &kp LSHIFT>
         ;
     };
     
