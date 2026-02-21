@@ -201,8 +201,8 @@ layers:
   - {t: '&alg S', h: LALT}
   - {t: '&alg D', h: LCTRL}
   - {t: '&alg F', h: LSHIFT}
-  - G
-  - H
+  - '&alg G'
+  - '&alg H'
   - {t: '&alg J', h: RSHIFT}
   - {t: '&alg K', h: RCTRL}
   - {t: '&alg L', h: RALT}
