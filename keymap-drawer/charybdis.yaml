@@ -54,7 +54,7 @@ layers:
   - Caret
   - LCTRL
   - LALT
-  - {t: BSPC, h: Raise}
+  - {t: BSPC, h: Language}
   - {t: SPACE, h: Symbols}
   - RET
   Pointer:
@@ -171,55 +171,55 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Raise:
+  Language:
+  - {t: ▽, type: trans}
+  - '&alg N1'
+  - '&alg N2'
+  - '&alg N3'
+  - '&alg N4'
+  - '&alg N5'
+  - '&alg N6'
+  - '&alg N7'
+  - '&alg N8'
+  - '&alg N9'
+  - '&alg N0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&alg Q'
+  - '&alg W'
+  - '&alg E'
+  - '&alg R'
+  - '&alg T'
+  - '&alg Y'
+  - '&alg U'
+  - '&alg I'
+  - '&alg O'
+  - '&alg P'
+  - '&alg LBKT'
+  - RCTRL
+  - {t: '&alg A', h: LGUI}
+  - {t: '&alg S', h: LALT}
+  - {t: '&alg D', h: LCTRL}
+  - {t: '&alg F', h: LSHIFT}
+  - G
+  - H
+  - {t: '&alg J', h: RSHIFT}
+  - {t: '&alg K', h: RCTRL}
+  - {t: '&alg L', h: RALT}
+  - {t: '&alg SEMI', h: RGUI}
+  - ''''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alg Z'
+  - '&alg X'
+  - '&alg C'
+  - '&alg V'
+  - '&alg B'
+  - '&alg N'
+  - '&alg M'
+  - '&alg COMMA'
+  - '&alg DOT'
+  - '&alg FSLH'
+  - '&alg RBKT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
